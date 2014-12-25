@@ -177,8 +177,8 @@ namespace Microsoft.Samples.Kinect.ObjectRecognition
                     this.upperV = pos;
                 }
             };
-            CvTrackbar lowerH = colorPick.CreateTrackbar("lower H", this.lowerH, 255, lowerHCallback);
-            CvTrackbar upperH = colorPick.CreateTrackbar("upper H", this.upperH, 255, upperHCallback);
+            CvTrackbar lowerH = colorPick.CreateTrackbar("lower H", this.lowerH, 179, lowerHCallback);
+            CvTrackbar upperH = colorPick.CreateTrackbar("upper H", this.upperH, 179, upperHCallback);
             CvTrackbar lowerS = colorPick.CreateTrackbar("lower S", this.lowerS, 255, lowerSCallback);
             CvTrackbar upperS = colorPick.CreateTrackbar("upper S", this.upperS, 255, upperSCallback);
             CvTrackbar lowerV = colorPick.CreateTrackbar("lower V", this.lowerH, 255, lowerVCallback);

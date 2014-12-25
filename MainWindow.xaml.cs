@@ -181,8 +181,8 @@ namespace Microsoft.Samples.Kinect.ObjectRecognition
             CvTrackbar upperH = colorPick.CreateTrackbar("upper H", this.upperH, 179, upperHCallback);
             CvTrackbar lowerS = colorPick.CreateTrackbar("lower S", this.lowerS, 255, lowerSCallback);
             CvTrackbar upperS = colorPick.CreateTrackbar("upper S", this.upperS, 255, upperSCallback);
-            CvTrackbar lowerV = colorPick.CreateTrackbar("lower V", this.lowerH, 255, lowerVCallback);
-            CvTrackbar upperV = colorPick.CreateTrackbar("upper V", this.upperH, 255, upperVCallback);
+            CvTrackbar lowerV = colorPick.CreateTrackbar("lower V", this.lowerV, 255, lowerVCallback);
+            CvTrackbar upperV = colorPick.CreateTrackbar("upper V", this.upperV, 255, upperVCallback);
         }
 
         /// <summary>
@@ -374,7 +374,7 @@ namespace Microsoft.Samples.Kinect.ObjectRecognition
                 CvSize size = new CvSize(imgThreshed.Width / 2, imgThreshed.Height / 2);
                 IplImage imgResized = new IplImage(size, BitDepth.U8, 1);
                 imgThreshed.Resize(imgResized, Interpolation.Linear);
-                Cv.ShowImage("Thresholded", imgResized);
+                Cv.ShowImage("Thresholded View", imgResized);
 
                 // clean up
                 imgHsv.Dispose();
